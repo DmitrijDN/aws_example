@@ -1,0 +1,22 @@
+#main-page-wrapper
+	#title
+		h2 Select file and press submit to upload to server
+		button(ngf-select="mainCtrl.uploadFile($file)") Upload
+	#files-wrapper
+		.item.header
+			.name
+				span Name
+			.date
+				span Date
+			.path
+				span Path
+			.remove
+		.item(ng-repeat="file in mainCtrl.files")
+			.name.like-url
+				span(ng-click="mainCtrl.openFile(file)") {{file.name}}
+			.date
+				span {{file.date | date: 'dd/MM/yyyy hh:mm:ss'}}
+			.path
+				span {{file.path}}
+			.remove
+				button(ng-click="mainCtrl.removeFile(file._id, $index)") Remove

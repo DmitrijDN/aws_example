@@ -1,0 +1,75 @@
+#main
+	position absolute
+	width 100%
+	height 100%
+	top 0
+	left 0
+	#main-page-wrapper
+	#postgres-example-wrapper
+	#dynamo-db-example-wrapper
+		#title
+			text-align center
+			margin 2% 0
+			h2 
+				margin 0
+			button
+				margin 1% 0
+				cursor pointer
+				background-color  #07a707
+				color white
+				font-weight 500
+				height 40px
+				width 10%
+				border none
+				text-transform uppercase
+				font-size large
+				letter-spacing 2px
+		#files-wrapper
+			display flex
+			flex-direction column
+			margin-top 1%
+			width 80%
+			margin 0 10%
+			border 1px solid gray
+			border-top-left-radius 7px
+			border-top-right-radius 7px
+			.item.header
+				border-bottom 1px solid gray
+				> div
+					border-right 1px solid gray
+			.item
+				flex 0 0 40px
+				&:nth-child(even)
+					background-color #efefef
+				display flex
+				> div
+					padding 5px 0 0 1%
+				.name
+					flex 1 0 0
+				.date
+					flex 1 0 0
+				.path
+					flex 4 0 0
+				.small-item
+					flex 1 0 0
+				.remove
+				.save
+					flex 0 0 100px
+					button
+						height 30px
+						width 80px
+						color white
+						font-weight 700
+						text-align center
+						background-color #e40404
+						text-transform uppercase
+						letter-spacing 1px
+						border none
+						cursor pointer
+				.save
+					button
+						background-color green
+				.like-url
+					color blue
+					text-decoration underline
+					cursor pointer

@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title AWS EXAMPLE
+		link(href='./styles/css/style.css' rel='stylesheet')
+	body(ng-cloak)
+		block content
+		script(src='./javascripts/libs.js')
+		script(src='./javascripts/main.js')
+		script.
+			angular.bootstrap(document, ['aws-example']);

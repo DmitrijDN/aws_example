@@ -1,0 +1,53 @@
+{
+  "name": "aws_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node ./backend/server.js",
+    "test": "echo \"Error: no test specified\"",
+    "watch": "nodemon ./backend/server.js",
+    "release": "NODE_ENV=production grunt release"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "authors": [
+    "Beseda Dmitriy <dmitriy.beseda@binary.studio.com>"
+  ],
+  "license": "",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.9",
+    "async": "^1.2.1",
+    "aws-sdk": "^2.7.12",
+    "body-parser": "^1.15.2",
+    "cnfg": "^0.1.2",
+    "connect-mongo": "^0.8.1",
+    "express": "^4.13.0",
+    "express-api-response": "^0.3.0",
+    "express-session": "^1.11.3",
+    "fs": "0.0.2",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.5.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-stylus": "^0.21.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.4.0",
+    "grunt-open": "^0.2.3",
+    "mongoose": "^4.0.6",
+    "multer": "^1.0.3",
+    "ng-file-upload": "^7.0.10",
+    "nodemon": "^1.7.1",
+    "path": "^0.11.14",
+    "pg": "^6.1.2",
+    "replacestream": "^4.0.2",
+    "sequelize": "^3.27.0"
+  }
+}

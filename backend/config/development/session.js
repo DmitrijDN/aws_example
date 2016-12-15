@@ -1,0 +1,3 @@
+module.exorts = {
+	sercret: 'sessionsecretsessionsecretsessionsecret'
+};

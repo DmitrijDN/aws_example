@@ -1,0 +1,30 @@
+#dynamo-db-example-wrapper
+	h2 DYNAMO DB
+	#title
+		button(ng-click="$ctrl.addItem()") Add
+	#files-wrapper
+		.item.header
+			.name
+				span Name
+			.small-item
+				span Speed
+			.small-item
+				span Defend
+			.small-item
+				span Attack
+			.small-item
+				span Strength
+			.small-item
+		.item(ng-repeat="guy in $ctrl.footballers track by $index")
+			.name
+				input(ng-model="guy.name" placeholder="Enter name")
+			.small-item
+				input(ng-model="guy.speed" placeholder="Enter speed")
+			.small-item
+				input(ng-model="guy.defend" placeholder="Enter defend")
+			.small-item
+				input(ng-model="guy.attack" placeholder="Enter attack")
+			.small-item
+				input(ng-model="guy.strength" placeholder="Enter strength")
+			.save
+				button(ng-click="$ctrl.saveItem(guy, $index)") Save
